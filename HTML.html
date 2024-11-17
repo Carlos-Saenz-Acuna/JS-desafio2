@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Desafio 2 Condiones</title>
+    <link rel="stylesheet" href="./CSS.css"
 </head>
 <body>
     
     <h1>JS Desafío 2 - Condiciones</h1>
 
-<div class="ejecicio 1">
+<div class="ejercicio1">
+
     <h3>Ejecicio 1</h3>
     <p>Se debe construir una página con una única imagen, al hacerle click a la imagen se
 le debe agregar un borde rojo de 2 pixeles, al hacerle click nuevamente se le debe
 quitar el borde.</p>
 
+<img id="img1" src="./img/eje1.jpg"width=300px  />
+<p>Click en la imagen</p>
+<br>
+
 </div>
 <hr>
   
-<div class="ejecicio 2">
+<div >
     <h3>Ejecicio 2</h3>
     <p>Se debe construir una página web que permita pedir hasta 10 stickers de los 3 tipos
 disponibles. Para eso deberá existir un input debajo de cada imagen donde el
@@ -27,9 +33,38 @@ seleccionados sea menor o igual 10 se indicará en un párrafo nuevo la cantidad
 stickers llevados. Ejemplo "llevas 5 stickers" en cualquier otro caso se mostrará un
 texto que dice "Llevas demasiados stickers"</p>
 
+    <div class="caja">
+        <div class="cajita">
+            <img id="sticker1" src="./img/sticker1.jpg"width=150px/>
+            <br>
+            <input type="number" id="input1" placeholder="Ingresa la Cantidad"
+            <br>
+        </div>
+
+        <div class="cajita">
+            <img id="sticker2" src="./img/sticker2.jpg"width=150px/>
+            <br>
+            <input type="number" id="input2" placeholder="Ingresa la Cantidad"
+            <br>
+        </div>
+
+        <div class="cajita">
+            <img id="sticker3" src="./img/sticker3.jpg"width=150px/>
+            <br>
+            <input type="number" id="input3" placeholder="Ingresa la Cantidad"
+            <br>
+        </div>
+    </div>
+<br>
+<button id="verificar">Verificar</button>
+<p>Llevas <span id="cantidad">0</span> Stickers</p>
+<p id="error"></p>
+
 </div>
 <hr>
-<div class="ejecicio 3">
+
+
+<div class="ejercicio3">
     <h3>Ejecicio 3</h3>
     <p>Se debe construir una página con 3 select y opciones con dígitos del 1 al 9, al hacer
 click a la opción ingresar se debe verificar que el password sea 911 y en ese caso
@@ -38,11 +73,55 @@ correcto", en caso de que el password sea 714 se debe mostrar en el párrafo
 "password 2 es correcto", si ingresa otro valor se debe mostrar "password
 incorrecto"</p>
 
+    <h1>Ingresa el Password</h1>
+        <div class="caja2">
+          <article class="cajita">
+            <select id="num1">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+          </article>
+          <article class="cajita">
+            <select id="num2">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+          </article>
+          <article class="cajita">
+            <select id="num3">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+          </article>
+
 </div>
 <hr>
 
-Fin desafio realiazdo por Carlos Saenz. 
+Fin ... desafio realiazdo por Carlos Saenz. 
 
+<script src="./JS.js">
 
+</script>
 </body>
 </html>
