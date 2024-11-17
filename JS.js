@@ -24,12 +24,19 @@ verificar.addEventListener("click", () => {
  
   let suma = Number(input1.value) + Number(input2.value) + Number(input3.value);
 
-  if (suma < 10) {
+if (suma < 10) {
     total.textContent = suma;
     error.innerHTML = "vas bien, puedes elejir hasta 10 sticker.";
-
-} else {
+  } 
+else if (suma == 10) {
     total.textContent = suma;
-    error.innerHTML = "¡Llevas demasiados Stickers! maximo 10";
+    error.innerHTML = "¡Excelente! ya elijiste 10 Stickers";
+} 
+else  {
+    total.textContent = suma;
+    error.innerHTML = "¡¡¡Llevas demasiados Stickers!!! maximo 10";
     }
 });
+
+//Ejercicio 3
+
