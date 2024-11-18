@@ -40,3 +40,26 @@ else  {
 
 //Ejercicio 3
 
+let num1 = document.querySelector("#numero1");
+let num2 = document.querySelector("#numero2");
+let num3 = document.querySelector("#numero3");
+const boton = document.querySelector("#contraseña");
+let respuesta = document.querySelector("#respuesta");
+
+boton.addEventListener("click", () => {
+
+  let clave1 = num1.value;
+  let clave2 = num2.value;
+  let clave3 = num3.value;
+  let claveOk = clave1 + clave2 + clave3;
+
+  if (claveOk === "911") {
+    respuesta.textContent = "¡Clave 1 Correcta!";
+  } 
+  else if (claveOk === "714") {
+    respuesta.textContent = "¡Clave 2 Correcta!";
+  } 
+  else {
+    respuesta.textContent = "¡¡ CLAVE INCORRECTA !!";
+  }
+});
